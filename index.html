@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Daniel Ecological | Environmental & Ecological Services</title>
+  <meta name="description" content="Daniel Ecological provides environmental, ecological, and sustainability services across NC, SC, TN, and VA."/>
+  <style>
+    :root{
+      --bg:#0f1a14;
+      --bg2:#12261a;
+      --card:#182f22;
+      --text:#eef4ef;
+      --muted:#cfe7d6;
+      --accent:#b6e2c2;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.6;
+    }
+    header{
+      padding:70px 18px 30px;
+      text-align:center;
+      background:linear-gradient(180deg,var(--bg2),var(--bg));
+    }
+    h1{font-size:44px;margin:0 0 10px;letter-spacing:-.5px}
+    h2{font-size:30px;margin:0 0 14px}
+    p{margin:0 0 12px}
+    .tag{color:var(--muted)}
+    nav{margin-top:14px}
+    nav a{
+      color:var(--accent);
+      margin:0 12px;
+      text-decoration:none;
+      font-weight:700;
+    }
+    .pill{
+      display:inline-block;
+      padding:6px 12px;
+      border-radius:999px;
+      background:rgba(182,226,194,.12);
+      border:1px solid rgba(182,226,194,.35);
+      color:var(--muted);
+      font-weight:650;
+      margin-top:10px;
+    }
+    .wrap{
+      max-width:1100px;
+      margin:0 auto;
+      padding:52px 18px;
+    }
+    .grid{
+      display:grid;
+      gap:16px;
+      grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    }
+    .card{
+      background:rgba(255,255,255,.04);
+      border:1px solid rgba(255,255,255,.12);
+      padding:20px;
+      border-radius:16px;
+    }
+    .gallery img{
+      width:100%;
+      height:240px;
+      object-fit:cover;
+      border-radius:16px;
+      border:1px solid rgba(255,255,255,.12);
+      background:#0b120e;
+    }
+    form{display:grid;gap:12px}
+    input,textarea{
+      width:100%;
+      padding:12px 14px;
+      border-radius:12px;
+      border:1px solid rgba(255,255,255,.16);
+      background:rgba(0,0,0,.25);
+      color:var(--text);
+      font-size:15px;
+    }
+    textarea{min-height:140px;resize:vertical}
+    button{
+      cursor:pointer;
+      padding:14px;
+      border-radius:12px;
+      border:0;
+      background:var(--accent);
+      color:#0f1a14;
+      font-weight:800;
+      font-size:16px;
+    }
+    footer{
+      text-align:center;
+      padding:28px 18px;
+      background:var(--bg2);
+      opacity:.9;
+      border-top:1px solid rgba(255,255,255,.08);
+    }
+    a{color:var(--accent)}
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Daniel Ecological</h1>
+  <p class="tag">Environmental • Ecological • Sustainable Solutions</p>
+  <span class="pill">Serving NC • SC • TN • VA</span>
+  <nav>
+    <a href="#info">Info</a>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="info" class="wrap">
+  <h2>Info</h2>
+  <div class="card">
+    <p>
+      Daniel Ecological provides professional environmental and ecological services focused on
+      responsible land stewardship and practical solutions. We work with homeowners, developers,
+      and organizations to evaluate sites, identify concerns, and support sustainable outcomes.
+    </p>
+  </div>
+</section>
+
+<section id="services" class="wrap">
+  <h2>Services</h2>
+  <div class="grid">
+    <div class="card"><strong>Environmental Assessments</strong><br/>Site observations and documentation support.</div>
+    <div class="card"><strong>Ecological Consulting</strong><br/>Clear guidance for sustainable land use.</div>
+    <div class="card"><strong>Land & Habitat Evaluation</strong><br/>Field review of conditions and constraints.</div>
+    <div class="card"><strong>Sustainability Planning</strong><br/>Practical planning for long-term results.</div>
+    <div class="card"><strong>Site Inspections</strong><br/>On-site review with notes and next steps.</div>
+    <div class="card"><strong>Compliance Support</strong><br/>Help organizing environmental requirements.</div>
+  </div>
+</section>
+
+<section id="gallery" class="wrap">
+  <h2>Gallery</h2>
+  <p class="tag">Replace these placeholders with your project photos.</p>
+  <div class="grid gallery">
+    <img src="https://placehold.co/600x400?text=Project+1" alt="Project 1">
+    <img src="https://placehold.co/600x400?text=Project+2" alt="Project 2">
+    <img src="https://placehold.co/600x400?text=Project+3" alt="Project 3">
+    <img src="https://placehold.co/600x400?text=Project+4" alt="Project 4">
+  </div>
+</section>
+
+<section id="contact" class="wrap">
+  <h2>Contact</h2>
+  <div class="grid">
+    <div class="card">
+      <p><strong>Service Area:</strong> NC, SC, TN, VA</p>
+      <p><strong>Email:</strong> <a href="mailto:info@daniel-ecological.com">info@daniel-ecological.com</a></p>
+      <p class="tag">Or send a message using the form.</p>
+    </div>
+
+    <div class="card">
+      <!-- Replace YOUR_FORMSPREE_ENDPOINT after you create the form -->
+      <form action="YOUR_FORMSPREE_ENDPOINT" method="POST">
+        <input name="name" placeholder="Your name" required>
+        <input type="email" name="email" placeholder="Your email" required>
+        <input name="subject" placeholder="Subject (optional)">
+        <textarea name="message" placeholder="How can we help?" required></textarea>
+        <input type="text" name="_gotcha" style="display:none">
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © <span id="y"></span> Daniel Ecological. All rights reserved.
+</footer>
+
+<script>
+  document.getElementById("y").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
